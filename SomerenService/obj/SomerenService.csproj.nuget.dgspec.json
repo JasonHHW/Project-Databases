@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\menee\\Desktop\\Informatica Studie\\Project Database\\SomerenService\\SomerenService.csproj": {}
+    "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenService\\SomerenService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\menee\\Desktop\\Informatica Studie\\Project Database\\SomerenDAL\\SomerenDAL.csproj": {
+    "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenDAL\\SomerenDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\menee\\Desktop\\Informatica Studie\\Project Database\\SomerenDAL\\SomerenDAL.csproj",
+        "projectUniqueName": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenDAL\\SomerenDAL.csproj",
         "projectName": "SomerenDAL",
-        "projectPath": "C:\\Users\\menee\\Desktop\\Informatica Studie\\Project Database\\SomerenDAL\\SomerenDAL.csproj",
-        "packagesPath": "C:\\Users\\menee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\menee\\Desktop\\Informatica Studie\\Project Database\\SomerenDAL\\obj\\",
+        "projectPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenDAL\\SomerenDAL.csproj",
+        "packagesPath": "C:\\Users\\adam8\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenDAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\menee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adam8\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\menee\\Desktop\\Informatica Studie\\Project Database\\SomerenModel\\SomerenModel.csproj": {
-                "projectPath": "C:\\Users\\menee\\Desktop\\Informatica Studie\\Project Database\\SomerenModel\\SomerenModel.csproj"
+              "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenModel\\SomerenModel.csproj": {
+                "projectPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenModel\\SomerenModel.csproj"
               }
             }
           }
@@ -48,9 +48,13 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
-              "version": "[4.8.5, )"
+              "version": "[4.8.6, )"
             }
           },
           "imports": [
@@ -73,20 +77,20 @@
         }
       }
     },
-    "C:\\Users\\menee\\Desktop\\Informatica Studie\\Project Database\\SomerenModel\\SomerenModel.csproj": {
+    "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenModel\\SomerenModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\menee\\Desktop\\Informatica Studie\\Project Database\\SomerenModel\\SomerenModel.csproj",
+        "projectUniqueName": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenModel\\SomerenModel.csproj",
         "projectName": "SomerenModel",
-        "projectPath": "C:\\Users\\menee\\Desktop\\Informatica Studie\\Project Database\\SomerenModel\\SomerenModel.csproj",
-        "packagesPath": "C:\\Users\\menee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\menee\\Desktop\\Informatica Studie\\Project Database\\SomerenModel\\obj\\",
+        "projectPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenModel\\SomerenModel.csproj",
+        "packagesPath": "C:\\Users\\adam8\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\menee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adam8\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -112,6 +116,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -132,20 +146,20 @@
         }
       }
     },
-    "C:\\Users\\menee\\Desktop\\Informatica Studie\\Project Database\\SomerenService\\SomerenService.csproj": {
+    "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenService\\SomerenService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\menee\\Desktop\\Informatica Studie\\Project Database\\SomerenService\\SomerenService.csproj",
+        "projectUniqueName": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenService\\SomerenService.csproj",
         "projectName": "SomerenService",
-        "projectPath": "C:\\Users\\menee\\Desktop\\Informatica Studie\\Project Database\\SomerenService\\SomerenService.csproj",
-        "packagesPath": "C:\\Users\\menee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\menee\\Desktop\\Informatica Studie\\Project Database\\SomerenService\\obj\\",
+        "projectPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenService\\SomerenService.csproj",
+        "packagesPath": "C:\\Users\\adam8\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\menee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adam8\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -160,11 +174,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\menee\\Desktop\\Informatica Studie\\Project Database\\SomerenDAL\\SomerenDAL.csproj": {
-                "projectPath": "C:\\Users\\menee\\Desktop\\Informatica Studie\\Project Database\\SomerenDAL\\SomerenDAL.csproj"
+              "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenDAL\\SomerenDAL.csproj": {
+                "projectPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenDAL\\SomerenDAL.csproj"
               },
-              "C:\\Users\\menee\\Desktop\\Informatica Studie\\Project Database\\SomerenModel\\SomerenModel.csproj": {
-                "projectPath": "C:\\Users\\menee\\Desktop\\Informatica Studie\\Project Database\\SomerenModel\\SomerenModel.csproj"
+              "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenModel\\SomerenModel.csproj": {
+                "projectPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenModel\\SomerenModel.csproj"
               }
             }
           }
@@ -178,6 +192,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
