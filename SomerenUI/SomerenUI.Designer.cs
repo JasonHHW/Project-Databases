@@ -44,13 +44,21 @@
             listViewStudents = new System.Windows.Forms.ListView();
             label1 = new System.Windows.Forms.Label();
             pnlDocenten = new System.Windows.Forms.Panel();
-            listViewDocenten = new System.Windows.Forms.ListView();
             lblDocenten = new System.Windows.Forms.Label();
+            listViewDocenten = new System.Windows.Forms.ListView();
+            pnlActiviteiten = new System.Windows.Forms.Panel();
+            pnlKamers = new System.Windows.Forms.Panel();
+            listViewKamers = new System.Windows.Forms.ListView();
+            lblKamers = new System.Windows.Forms.Label();
+            lblActiviteiten = new System.Windows.Forms.Label();
+            listViewActiviteiten = new System.Windows.Forms.ListView();
             menuStrip1.SuspendLayout();
             pnlDashboard.SuspendLayout();
             pnlStudents.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             pnlDocenten.SuspendLayout();
+            pnlActiviteiten.SuspendLayout();
+            pnlKamers.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
@@ -104,12 +112,14 @@
             activiteitenToolStripMenuItem.Name = "activiteitenToolStripMenuItem";
             activiteitenToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             activiteitenToolStripMenuItem.Text = "Activiteiten";
+            activiteitenToolStripMenuItem.Click += activiteitenToolStripMenuItem_Click;
             // 
             // kamersToolStripMenuItem
             // 
             kamersToolStripMenuItem.Name = "kamersToolStripMenuItem";
             kamersToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
             kamersToolStripMenuItem.Text = "Kamers";
+            kamersToolStripMenuItem.Click += kamersToolStripMenuItem_Click;
             // 
             // pnlDashboard
             // 
@@ -174,14 +184,6 @@
             pnlDocenten.Size = new System.Drawing.Size(938, 460);
             pnlDocenten.TabIndex = 3;
             // 
-            // listViewDocenten
-            // 
-            listViewDocenten.Location = new System.Drawing.Point(16, 42);
-            listViewDocenten.Name = "listViewDocenten";
-            listViewDocenten.Size = new System.Drawing.Size(626, 318);
-            listViewDocenten.TabIndex = 0;
-            listViewDocenten.UseCompatibleStateImageBehavior = false;
-            // 
             // lblDocenten
             // 
             lblDocenten.AutoSize = true;
@@ -193,11 +195,76 @@
             lblDocenten.TabIndex = 1;
             lblDocenten.Text = "Docenten";
             // 
+            // listViewDocenten
+            // 
+            listViewDocenten.Location = new System.Drawing.Point(16, 42);
+            listViewDocenten.Name = "listViewDocenten";
+            listViewDocenten.Size = new System.Drawing.Size(626, 318);
+            listViewDocenten.TabIndex = 0;
+            listViewDocenten.UseCompatibleStateImageBehavior = false;
+            // 
+            // pnlActiviteiten
+            // 
+            pnlActiviteiten.Controls.Add(lblActiviteiten);
+            pnlActiviteiten.Controls.Add(listViewActiviteiten);
+            pnlActiviteiten.Location = new System.Drawing.Point(11, 29);
+            pnlActiviteiten.Name = "pnlActiviteiten";
+            pnlActiviteiten.Size = new System.Drawing.Size(939, 460);
+            pnlActiviteiten.TabIndex = 4;
+            // 
+            // pnlKamers
+            // 
+            pnlKamers.Controls.Add(listViewKamers);
+            pnlKamers.Controls.Add(lblKamers);
+            pnlKamers.Location = new System.Drawing.Point(10, 28);
+            pnlKamers.Name = "pnlKamers";
+            pnlKamers.Size = new System.Drawing.Size(937, 458);
+            pnlKamers.TabIndex = 2;
+            // 
+            // listViewKamers
+            // 
+            listViewKamers.Location = new System.Drawing.Point(23, 57);
+            listViewKamers.Name = "listViewKamers";
+            listViewKamers.Size = new System.Drawing.Size(588, 328);
+            listViewKamers.TabIndex = 3;
+            listViewKamers.UseCompatibleStateImageBehavior = false;
+            // 
+            // lblKamers
+            // 
+            lblKamers.AutoSize = true;
+            lblKamers.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lblKamers.Location = new System.Drawing.Point(23, 10);
+            lblKamers.Name = "lblKamers";
+            lblKamers.Size = new System.Drawing.Size(74, 25);
+            lblKamers.TabIndex = 2;
+            lblKamers.Text = "Kamers";
+            // 
+            // lblActiviteiten
+            // 
+            lblActiviteiten.AutoSize = true;
+            lblActiviteiten.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lblActiviteiten.Location = new System.Drawing.Point(4, 3);
+            lblActiviteiten.Name = "lblActiviteiten";
+            lblActiviteiten.Size = new System.Drawing.Size(106, 25);
+            lblActiviteiten.TabIndex = 1;
+            lblActiviteiten.Text = "Activiteiten";
+            // 
+            // listViewActiviteiten
+            // 
+            listViewActiviteiten.Location = new System.Drawing.Point(4, 40);
+            listViewActiviteiten.Name = "listViewActiviteiten";
+            listViewActiviteiten.Size = new System.Drawing.Size(580, 320);
+            listViewActiviteiten.TabIndex = 0;
+            listViewActiviteiten.UseCompatibleStateImageBehavior = false;
+            listViewActiviteiten.SelectedIndexChanged += listViewActiviteiten_SelectedIndexChanged;
+            // 
             // SomerenUI
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(962, 505);
+            Controls.Add(pnlKamers);
+            Controls.Add(pnlActiviteiten);
             Controls.Add(pnlDocenten);
             Controls.Add(menuStrip1);
             Controls.Add(pnlStudents);
@@ -214,6 +281,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             pnlDocenten.ResumeLayout(false);
             pnlDocenten.PerformLayout();
+            pnlActiviteiten.ResumeLayout(false);
+            pnlActiviteiten.PerformLayout();
+            pnlKamers.ResumeLayout(false);
+            pnlKamers.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -237,5 +308,11 @@
         private System.Windows.Forms.Panel pnlDocenten;
         private System.Windows.Forms.ListView listViewDocenten;
         private System.Windows.Forms.Label lblDocenten;
+        private System.Windows.Forms.Panel pnlActiviteiten;
+        private System.Windows.Forms.Label lblActiviteiten;
+        private System.Windows.Forms.ListView listViewActiviteiten;
+        private System.Windows.Forms.Panel pnlKamers;
+        private System.Windows.Forms.ListView listViewKamers;
+        private System.Windows.Forms.Label lblKamers;
     }
 }
