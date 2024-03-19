@@ -9,7 +9,7 @@ namespace SomerenDAL
     {
         public List<Student> GetAllStudents()
         {
-            string query = "SELECT StudentId, Name FROM [TABLE]";
+            string query = "SELECT * FROM [Student]";
             SqlParameter[] sqlParameters = new SqlParameter[0];
             return ReadTables(ExecuteSelectQuery(query, sqlParameters));
         }
@@ -22,8 +22,12 @@ namespace SomerenDAL
             {
                 Student student = new Student()
                 {
-                    Number = (int)dr["StudentId"],
-                    Name = dr["Name"].ToString()
+                    StudentId = (int)dr["StudentId"],
+                    Voornaam = dr["Voornaam"].ToString(),
+                    Achternaam = dr["Achternaam"].ToString(),
+                    Telefoonnummer = dr["Telefoonnummer"].ToString(),
+                    Klas = dr["Klas"].ToString(),
+                    Kamer = dr["Kamer"].ToString()
                 };
                 students.Add(student);
             }
