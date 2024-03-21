@@ -260,5 +260,15 @@ namespace SomerenUI
         {
             ShowActiviteitenPanel();
         }
+
+        private void drankToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlStudents_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

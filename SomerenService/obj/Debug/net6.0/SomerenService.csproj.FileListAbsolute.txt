@@ -49,3 +49,21 @@ C:\Users\Gebruiker1\Documents\GitHub\Project-Databases\SomerenService\obj\Debug\
 C:\Users\Gebruiker1\Documents\GitHub\Project-Databases\SomerenService\obj\Debug\net6.0\refint\SomerenService.dll
 C:\Users\Gebruiker1\Documents\GitHub\Project-Databases\SomerenService\obj\Debug\net6.0\SomerenService.pdb
 C:\Users\Gebruiker1\Documents\GitHub\Project-Databases\SomerenService\obj\Debug\net6.0\ref\SomerenService.dll
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenService\bin\Debug\net6.0\SomerenService.deps.json
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenService\bin\Debug\net6.0\SomerenService.dll
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenService\bin\Debug\net6.0\SomerenService.pdb
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenService\bin\Debug\net6.0\SomerenDAL.dll
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenService\bin\Debug\net6.0\SomerenModel.dll
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenService\bin\Debug\net6.0\SomerenDAL.pdb
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenService\bin\Debug\net6.0\SomerenModel.pdb
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenService\obj\Debug\net6.0\SomerenService.csproj.AssemblyReference.cache
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenService\obj\Debug\net6.0\SomerenService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenService\obj\Debug\net6.0\SomerenService.AssemblyInfoInputs.cache
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenService\obj\Debug\net6.0\SomerenService.AssemblyInfo.cs
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenService\obj\Debug\net6.0\SomerenService.csproj.CoreCompileInputs.cache
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenService\obj\Debug\net6.0\SomerenService.sourcelink.json
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenService\obj\Debug\net6.0\SomerenS.F6A0C8F2.Up2Date
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenService\obj\Debug\net6.0\SomerenService.dll
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenService\obj\Debug\net6.0\refint\SomerenService.dll
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenService\obj\Debug\net6.0\SomerenService.pdb
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenService\obj\Debug\net6.0\ref\SomerenService.dll
