@@ -11,7 +11,7 @@ namespace SomerenModel
         public string Klas { get; set; }
         public string Kamer { get; set; }
 
-
+        public string Naam { get { return Voornaam + " " + Achternaam; } }
 
 
         public override string ToString()

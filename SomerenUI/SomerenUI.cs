@@ -3,11 +3,11 @@ using SomerenModel;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System;
-
 namespace SomerenUI
 {
     public partial class SomerenUI : Form
     {
+        Kamer kamer { get; set; }
         public SomerenUI()
         {
             InitializeComponent();
@@ -163,7 +163,7 @@ namespace SomerenUI
                 listViewActiviteiten.Items.Add(li);
 
             }
-              listViewActiviteiten.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+            listViewActiviteiten.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
         }
         private void DisplayKamers(List<Kamer> kamers)
         {
@@ -173,10 +173,10 @@ namespace SomerenUI
 
             foreach (Kamer kamer in kamers)
             {
-                ListViewItem li = new ListViewItem(kamer.KamerCode);
+                ListViewItem li = new ListViewItem(kamer.RoomCode);
                 li.Tag = kamer;   // link student object to listview item
-                li.SubItems.Add(kamer.Verdieping.ToString());
-                li.SubItems.Add(kamer.Gebouw.ToString());
+                li.SubItems.Add(kamer.Slaapplekken.ToString());
+                li.SubItems.Add(kamer.Type.ToString());
 
 
                 listViewKamers.Items.Add(li);
@@ -192,7 +192,7 @@ namespace SomerenUI
 
             foreach (Student student in students)
             {
-                ListViewItem li = new ListViewItem(student.ToString());
+                ListViewItem li = new ListViewItem(student.Naam);
 
 
                 li.Tag = student;   // link student object to listview item
@@ -207,7 +207,7 @@ namespace SomerenUI
 
             foreach (Docent docent in docenten)
             {
-                ListViewItem li = new ListViewItem(docent.ToString());
+                ListViewItem li = new ListViewItem(docent.Naam);
 
 
                 li.Tag = docent;   // link student object to listview item
