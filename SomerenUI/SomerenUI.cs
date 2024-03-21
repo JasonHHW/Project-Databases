@@ -3,12 +3,11 @@ using SomerenModel;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System;
-using SomerenDAL;
-
 namespace SomerenUI
 {
     public partial class SomerenUI : Form
     {
+        Kamer kamer { get; set; }
         public SomerenUI()
         {
             InitializeComponent();
@@ -18,9 +17,7 @@ namespace SomerenUI
         {
             // hide all other panels
             pnlStudents.Hide();
-            pnlDocenten.Hide();
-            pnlActiviteiten.Hide();
-            pnlKamers.Hide();
+
             // show dashboard
             pnlDashboard.Show();
         }
@@ -28,11 +25,15 @@ namespace SomerenUI
         private void ShowStudentsPanel()
         {
             // hide all other panels
-            pnlDashboard.Hide();
+            //pnlDashboard.Hide();
+
             pnlDocenten.Hide();
-            pnlActiviteiten.Hide();
             pnlKamers.Hide();
+
             // show students
+            pnlStudents.BringToFront();
+            pnlStudents.Dock = DockStyle.Fill;
+
             pnlStudents.Show();
 
             try
@@ -46,148 +47,175 @@ namespace SomerenUI
                 MessageBox.Show("Something went wrong while loading the students: " + e.Message);
             }
         }
-
-        private void ShowDocentenPanel()
-        {
-            // hide all other panels
-            pnlDashboard.Hide();
-            pnlStudents.Hide();
-            pnlActiviteiten.Hide();
-            pnlKamers.Hide();
-            // show docenten
-            pnlDocenten.Show();
-
-            try
-            {
-                // get and display all docenten
-                List<Docent> docenten = GetDocenten();
-                DisplayDocenten(docenten);
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show("Something went wrong while loading the docenten: " + e.Message);
-            }
-        }
-
         private void ShowActiviteitenPanel()
         {
-            //hide all other panels
-            pnlDashboard.Hide();
+            // hide all other panels
+            //pnlDashboard.Hide();
             pnlStudents.Hide();
             pnlDocenten.Hide();
             pnlKamers.Hide();
-            //show activiteiten
-            pnlActiviteiten.Show();
+            pnlActviteiten.BringToFront();
+            pnlActviteiten.Dock = DockStyle.Fill;
+
+            pnlActviteiten.Show();
+
 
             try
             {
-                //get and display all activiteiten
+                // get and display all students
                 List<Activiteit> activiteiten = GetActiviteiten();
                 DisplayActiviteiten(activiteiten);
             }
             catch (Exception e)
             {
-                MessageBox.Show("Something went wrong while loading the activiteiten: " + e.Message);
+                MessageBox.Show("Something went wrong while loading the activities: " + e.Message);
             }
-        }
 
+        }
         private void ShowKamersPanel()
         {
             // hide all other panels
-            pnlDashboard.Hide();
+            //pnlDashboard.Hide();
             pnlStudents.Hide();
             pnlDocenten.Hide();
-            pnlActiviteiten.Hide();
-            // show kamers
+            pnlKamers.BringToFront();
+            pnlKamers.Dock = DockStyle.Fill;
+
             pnlKamers.Show();
+
 
             try
             {
-                // get and display all kamers
+                // get and display all students
                 List<Kamer> kamers = GetKamers();
                 DisplayKamers(kamers);
             }
             catch (Exception e)
             {
-                MessageBox.Show("Something went wrong while loading the kamers: " + e.Message);
+                MessageBox.Show("Something went wrong while loading the rooms: " + e.Message);
             }
+
         }
-
-        private List<Student> GetStudents()
+        private void ShowTeachersPanel()
         {
-            StudentService studentService = new StudentService();
-            List<Student> students = studentService.GetStudents();
-            return students;
-        }
+            // hide all other panels
+            //pnlDashboard.Hide();
+            pnlStudents.Hide();
+            pnlKamers.Hide();
+            pnlDocenten.BringToFront();
 
-        private void DisplayStudents(List<Student> students)
-        {
-            // clear the listview before filling it
-            listViewStudents.Clear();
+            pnlDocenten.Dock = DockStyle.Fill;
 
-            foreach (Student student in students)
+            pnlDocenten.Show();
+
+
+            try
             {
-                ListViewItem li = new ListViewItem(student.Voornaam);
-                li.Tag = student;   // link student object to listview item
-                listViewStudents.Items.Add(li);
+                // get and display all students
+                List<Docent> docenten = GetDocenten();
+                DisplayTeachers(docenten);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Something went wrong while loading the teachers: " + e.Message);
             }
         }
 
         private List<Docent> GetDocenten()
         {
             DocentService docentService = new DocentService();
-            return docentService.GetDocenten();
+            List<Docent> docenten = docentService.GetDocenten();
+            return docenten;
         }
-
-        private void DisplayDocenten(List<Docent> docenten)
+        private List<Student> GetStudents()
         {
-            listViewDocenten.Clear();
-
-            foreach (Docent docent in docenten)
-            {
-                ListViewItem li = new ListViewItem(docent.Voornaam);
-                li.Tag = docent; // link docent object to listview item
-                listViewDocenten.Items.Add(li);
-            }
+            StudentService studentService = new StudentService();
+            List<Student> students = studentService.GetStudents();
+            return students;
         }
-
+        private List<Kamer> GetKamers()
+        {
+            KamerService KamerService = new KamerService();
+            List<Kamer> kamers = KamerService.GetKamers();
+            return kamers;
+        }
         private List<Activiteit> GetActiviteiten()
         {
             ActiviteitService activiteitService = new ActiviteitService();
-            return activiteitService.GetActiviteiten();
+            List<Activiteit> activiteiten = activiteitService.GetActiviteiten();
+            return activiteiten;
         }
+
 
         private void DisplayActiviteiten(List<Activiteit> activiteiten)
         {
-            // leegt de Activiteiten listview
-            listViewActiviteiten.Clear();
+            // clear the listview before filling it
+            listViewActiviteiten.Items.Clear();
 
             foreach (Activiteit activiteit in activiteiten)
             {
                 ListViewItem li = new ListViewItem(activiteit.ActiviteitNaam);
-                li.Tag = activiteit; // link activiteit object aan listview item
+                li.SubItems.Add(activiteit.BeginTijd.ToString("yyyy-MM-dd HH:mm"));
+                li.SubItems.Add(activiteit.EindTijd.ToString("yyyy-MM-dd HH:mm"));
+
+                li.Tag = activiteit;   // link student object to listview item
+
                 listViewActiviteiten.Items.Add(li);
+
             }
+            listViewActiviteiten.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
         }
-
-        private List<Kamer> GetKamers()
-        {
-            KamerService kamerService = new KamerService();
-            return kamerService.GetKamers();
-        }
-
         private void DisplayKamers(List<Kamer> kamers)
         {
-            // leegt de Kamers listview
-            listViewKamers.Clear();
+            // clear the listview before filling it
+            listViewKamers.Items.Clear();
+
 
             foreach (Kamer kamer in kamers)
             {
-                ListViewItem li = new ListViewItem(kamer.KamerCode);
-                li.Tag = kamer; // link kamer object aan listview item
+                ListViewItem li = new ListViewItem(kamer.RoomCode);
+                li.Tag = kamer;   // link student object to listview item
+                li.SubItems.Add(kamer.Slaapplekken.ToString());
+                li.SubItems.Add(kamer.Type.ToString());
+
+
                 listViewKamers.Items.Add(li);
+
+            }
+            listViewKamers.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+        }
+        private void DisplayStudents(List<Student> students)
+        {
+            // clear the listview before filling it
+            listViewStudents.Items.Clear();
+
+
+            foreach (Student student in students)
+            {
+                ListViewItem li = new ListViewItem(student.Naam);
+
+
+                li.Tag = student;   // link student object to listview item
+                listViewStudents.Items.Add(li);
+
+            }
+            //   listViewStudents.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+        }
+        private void DisplayTeachers(List<Docent> docenten)
+        {
+            listViewDocenten.Items.Clear();
+
+            foreach (Docent docent in docenten)
+            {
+                ListViewItem li = new ListViewItem(docent.Naam);
+
+
+                li.Tag = docent;   // link student object to listview item
+                listViewDocenten.Items.Add(li);
+
             }
         }
+
         private void dashboardToolStripMenuItem1_Click(object sender, System.EventArgs e)
         {
             ShowDashboardPanel();
@@ -210,27 +238,27 @@ namespace SomerenUI
 
         private void lecturersToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ShowDocentenPanel();
+            ShowTeachersPanel();
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void pnlTeachers_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void activiteitenToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ShowActiviteitenPanel();
-        }
-
-        private void kamersToolStripMenuItem_Click(object sender, EventArgs e)
+        private void roomsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ShowKamersPanel();
         }
 
-        private void listViewActiviteiten_SelectedIndexChanged(object sender, EventArgs e)
+        private void listViewKamers_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void activitiesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowActiviteitenPanel();
         }
     }
 }

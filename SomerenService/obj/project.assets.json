@@ -603,7 +603,9 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "SomerenDAL >= 1.0.0",
-      "SomerenModel >= 1.0.0"
+      "SomerenModel >= 1.0.0",
+      "System.Configuration.ConfigurationManager >= 8.0.0",
+      "System.Data.SqlClient >= 4.8.6"
     ]
   },
   "packageFolders": {
@@ -656,6 +658,16 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
+          "System.Data.SqlClient": {
+            "target": "Package",
+            "version": "[4.8.6, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

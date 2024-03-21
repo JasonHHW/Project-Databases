@@ -1,24 +1,26 @@
 ﻿using SomerenDAL;
+using SomerenModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SomerenModel;
+
 namespace SomerenService
 {
     public class KamerService
     {
-        private KamerDao kamerDao;
+        private KamerDao kamerdb;
 
         public KamerService()
         {
-            kamerDao = new KamerDao();
+            kamerdb = new KamerDao();
         }
-        
+
         public List<Kamer> GetKamers()
         {
-            return kamerDao.GetAllKamers();
+            List<Kamer> kamers = kamerdb.GetAllKamers();
+            return kamers;
         }
     }
 }
