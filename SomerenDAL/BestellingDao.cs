@@ -35,5 +35,14 @@ namespace SomerenDAL
             }
             return bestellingen;
         }
+
+        public List<Bestelling> GetByStartEndDate(DateTime start, DateTime end)
+        {
+            string query = "SELECT * FROM [Bestelling] WHERE [BestelDatum] >= @start AND [BestelDatum] <= @eind";
+            query.Replace("@start", start.ToString());
+            query.Replace("@end", end.ToString());
+            SqlParameter[] sqlParameters = new SqlParameter[0];
+            return ReadTables(ExecuteSelectQuery(query, sqlParameters));
+        }
     }
 }

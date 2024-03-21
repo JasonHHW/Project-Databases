@@ -13,10 +13,22 @@ namespace SomerenUI
             InitializeComponent();
         }
 
+        private void HideAllPanels() // Deze methode zet de visibility van alle pannels in de UI op false
+        {
+            pnlStudents.Hide();
+            pnlDocenten.Hide();
+            pnlActviteiten.Hide();
+            pnlKamers.Hide();
+            pnlDrankBestellingen.Hide();
+            pnlDrankOmzet.Hide();
+            pnlDrankVAT.Hide();
+            pnlDrankVoorrraad.Hide();
+            pnlDashboard.Hide();
+        }
         private void ShowDashboardPanel()
         {
             // hide all other panels
-            pnlStudents.Hide();
+            HideAllPanels();
 
             // show dashboard
             pnlDashboard.Show();
@@ -27,8 +39,7 @@ namespace SomerenUI
             // hide all other panels
             //pnlDashboard.Hide();
 
-            pnlDocenten.Hide();
-            pnlKamers.Hide();
+            HideAllPanels();
 
             // show students
             pnlStudents.BringToFront();
@@ -50,10 +61,7 @@ namespace SomerenUI
         private void ShowActiviteitenPanel()
         {
             // hide all other panels
-            //pnlDashboard.Hide();
-            pnlStudents.Hide();
-            pnlDocenten.Hide();
-            pnlKamers.Hide();
+            HideAllPanels();
             pnlActviteiten.BringToFront();
             pnlActviteiten.Dock = DockStyle.Fill;
 
@@ -74,10 +82,7 @@ namespace SomerenUI
         }
         private void ShowKamersPanel()
         {
-            // hide all other panels
-            //pnlDashboard.Hide();
-            pnlStudents.Hide();
-            pnlDocenten.Hide();
+            HideAllPanels();
             pnlKamers.BringToFront();
             pnlKamers.Dock = DockStyle.Fill;
 
@@ -99,9 +104,7 @@ namespace SomerenUI
         private void ShowTeachersPanel()
         {
             // hide all other panels
-            //pnlDashboard.Hide();
-            pnlStudents.Hide();
-            pnlKamers.Hide();
+            HideAllPanels();
             pnlDocenten.BringToFront();
 
             pnlDocenten.Dock = DockStyle.Fill;
@@ -267,6 +270,31 @@ namespace SomerenUI
         }
 
         private void pnlStudents_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlDrankOmzet_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblDrankOmzetEind_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpDrankOmzetEind_ValueChanged(object sender, EventArgs e)
+        {
+            if (dtpDrankOmzetStart.Value < dtpDrankOmzetEind.Value)
+            {
+                MessageBox.Show("End date can not be set before the start date");
+                dtpDrankOmzetEind.Value = dtpDrankOmzetStart.Value;
+            }
+
+        }
+
+        private void dtpDrankOmzetStart_ValueChanged(object sender, EventArgs e)
         {
 
         }
