@@ -4,6 +4,7 @@ namespace SomerenModel
 {
     public class Kamer
     {     
+        public string KamerCode { get; set; }
         public string Gebouw { get; set; } 
         public int Verdieping { get; set; }   
         public bool IsEenPersoons { get; set; }
@@ -35,17 +36,16 @@ namespace SomerenModel
 
         public string RoomCode
         {
-            get { return RoomCode; }
-            set
-            {
+            get {
                 string roomcode = "";
-                char[] kamercode = (value.ToCharArray());
+                char[] kamercode = KamerCode.ToCharArray();
                 for (int i = 1; i < kamercode.Length; i++)
                 {
-                    roomcode+= kamercode[i];
+                    roomcode += kamercode[i];
                 }
-                this.RoomCode = roomcode;
+                return roomcode;
             }
+            
         }
     }
 }

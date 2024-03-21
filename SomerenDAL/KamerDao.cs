@@ -26,7 +26,7 @@ namespace SomerenDAL
             {
                 Kamer kamer = new Kamer()
                 {
-                    RoomCode = dr["KamerCode"].ToString(),
+                    KamerCode = dr["KamerCode"].ToString(),
                     Gebouw = dr["Gebouw"].ToString(),
                     Verdieping = Convert.ToInt32(dr["Verdieping"]),
                     IsEenPersoons = (bool)dr["IsEenPersoons"]
