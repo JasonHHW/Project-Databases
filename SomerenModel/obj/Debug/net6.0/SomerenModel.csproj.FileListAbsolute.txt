@@ -21,3 +21,26 @@ C:\Users\Gebruiker1\Documents\GitHub\Project-Databases\SomerenModel\bin\Debug\ne
 C:\Users\Gebruiker1\Documents\GitHub\Project-Databases\SomerenModel\bin\Debug\net6.0\SomerenModel.dll
 C:\Users\Gebruiker1\Documents\GitHub\Project-Databases\SomerenModel\bin\Debug\net6.0\SomerenModel.pdb
 C:\Users\Gebruiker1\Documents\GitHub\Project-Databases\SomerenModel\obj\Debug\net6.0\ref\SomerenModel.dll
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Someren2023\SomerenModel\bin\Debug\net6.0\SomerenModel.deps.json
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Someren2023\SomerenModel\bin\Debug\net6.0\SomerenModel.dll
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Someren2023\SomerenModel\bin\Debug\net6.0\SomerenModel.pdb
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Someren2023\SomerenModel\obj\Debug\net6.0\SomerenModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Someren2023\SomerenModel\obj\Debug\net6.0\SomerenModel.AssemblyInfoInputs.cache
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Someren2023\SomerenModel\obj\Debug\net6.0\SomerenModel.AssemblyInfo.cs
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Someren2023\SomerenModel\obj\Debug\net6.0\SomerenModel.csproj.CoreCompileInputs.cache
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Someren2023\SomerenModel\obj\Debug\net6.0\SomerenModel.dll
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Someren2023\SomerenModel\obj\Debug\net6.0\refint\SomerenModel.dll
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Someren2023\SomerenModel\obj\Debug\net6.0\SomerenModel.pdb
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Someren2023\SomerenModel\obj\Debug\net6.0\ref\SomerenModel.dll
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenModel\bin\Debug\net6.0\SomerenModel.deps.json
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenModel\bin\Debug\net6.0\SomerenModel.dll
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenModel\bin\Debug\net6.0\SomerenModel.pdb
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenModel\obj\Debug\net6.0\SomerenModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenModel\obj\Debug\net6.0\SomerenModel.AssemblyInfoInputs.cache
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenModel\obj\Debug\net6.0\SomerenModel.AssemblyInfo.cs
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenModel\obj\Debug\net6.0\SomerenModel.csproj.CoreCompileInputs.cache
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenModel\obj\Debug\net6.0\SomerenModel.sourcelink.json
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenModel\obj\Debug\net6.0\SomerenModel.dll
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenModel\obj\Debug\net6.0\refint\SomerenModel.dll
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenModel\obj\Debug\net6.0\SomerenModel.pdb
+C:\Users\adam8\Downloads\bachelor informatica\project databases\Project-Databases\SomerenModel\obj\Debug\net6.0\ref\SomerenModel.dll

@@ -1,24 +1,27 @@
-﻿using System;
+﻿using SomerenDAL;
+using SomerenModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SomerenDAL;
-using SomerenModel;
+
 namespace SomerenService
 {
     public class ActiviteitService
     {
-        private ActiviteitDao activiteitDao;
+        
+            private ActiviteitDao activiteitdb;
 
-        public ActiviteitService()
-        {
-            activiteitDao = new ActiviteitDao();
-        }
+            public ActiviteitService()
+            {
+                activiteitdb = new ActiviteitDao();
+            }
 
-        public List<Activiteit> GetActiviteiten() 
-        {
-            return activiteitDao.GetAllActiviteiten();
+            public List<Activiteit> GetActiviteiten()
+            {
+                List<Activiteit> activiteiten = activiteitdb.GetAllActiviteiten();
+                return activiteiten;
+            }
         }
     }
-}

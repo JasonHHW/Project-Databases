@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenUI\\SomerenUI.csproj": {}
+    "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenUI\\SomerenUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenDAL\\SomerenDAL.csproj": {
+    "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenDAL\\SomerenDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenDAL\\SomerenDAL.csproj",
+        "projectUniqueName": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenDAL\\SomerenDAL.csproj",
         "projectName": "SomerenDAL",
-        "projectPath": "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenDAL\\SomerenDAL.csproj",
-        "packagesPath": "C:\\Users\\Gebruiker1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenDAL\\obj\\",
+        "projectPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenDAL\\SomerenDAL.csproj",
+        "packagesPath": "C:\\Users\\adam8\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenDAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Gebruiker1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adam8\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenModel\\SomerenModel.csproj": {
-                "projectPath": "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenModel\\SomerenModel.csproj"
+              "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenModel\\SomerenModel.csproj": {
+                "projectPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenModel\\SomerenModel.csproj"
               }
             }
           }
@@ -42,6 +42,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -73,24 +78,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenModel\\SomerenModel.csproj": {
+    "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenModel\\SomerenModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenModel\\SomerenModel.csproj",
+        "projectUniqueName": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenModel\\SomerenModel.csproj",
         "projectName": "SomerenModel",
-        "projectPath": "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenModel\\SomerenModel.csproj",
-        "packagesPath": "C:\\Users\\Gebruiker1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenModel\\obj\\",
+        "projectPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenModel\\SomerenModel.csproj",
+        "packagesPath": "C:\\Users\\adam8\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Gebruiker1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adam8\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -111,6 +116,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -132,24 +142,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenService\\SomerenService.csproj": {
+    "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenService\\SomerenService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenService\\SomerenService.csproj",
+        "projectUniqueName": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenService\\SomerenService.csproj",
         "projectName": "SomerenService",
-        "projectPath": "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenService\\SomerenService.csproj",
-        "packagesPath": "C:\\Users\\Gebruiker1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenService\\obj\\",
+        "projectPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenService\\SomerenService.csproj",
+        "packagesPath": "C:\\Users\\adam8\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Gebruiker1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adam8\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -164,11 +174,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenDAL\\SomerenDAL.csproj": {
-                "projectPath": "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenDAL\\SomerenDAL.csproj"
+              "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenDAL\\SomerenDAL.csproj": {
+                "projectPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenDAL\\SomerenDAL.csproj"
               },
-              "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenModel\\SomerenModel.csproj": {
-                "projectPath": "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenModel\\SomerenModel.csproj"
+              "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenModel\\SomerenModel.csproj": {
+                "projectPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenModel\\SomerenModel.csproj"
               }
             }
           }
@@ -177,11 +187,26 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -198,24 +223,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenUI\\SomerenUI.csproj": {
+    "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenUI\\SomerenUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenUI\\SomerenUI.csproj",
+        "projectUniqueName": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenUI\\SomerenUI.csproj",
         "projectName": "SomerenUI",
-        "projectPath": "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenUI\\SomerenUI.csproj",
-        "packagesPath": "C:\\Users\\Gebruiker1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenUI\\obj\\",
+        "projectPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenUI\\SomerenUI.csproj",
+        "packagesPath": "C:\\Users\\adam8\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Gebruiker1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adam8\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -230,11 +255,11 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenModel\\SomerenModel.csproj": {
-                "projectPath": "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenModel\\SomerenModel.csproj"
+              "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenModel\\SomerenModel.csproj": {
+                "projectPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenModel\\SomerenModel.csproj"
               },
-              "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenService\\SomerenService.csproj": {
-                "projectPath": "C:\\Users\\Gebruiker1\\Documents\\GitHub\\Project-Databases\\SomerenService\\SomerenService.csproj"
+              "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenService\\SomerenService.csproj": {
+                "projectPath": "C:\\Users\\adam8\\Downloads\\bachelor informatica\\project databases\\Someren2023\\SomerenService\\SomerenService.csproj"
               }
             }
           }
@@ -243,6 +268,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -267,7 +297,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

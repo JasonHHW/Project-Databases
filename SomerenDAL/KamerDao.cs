@@ -28,20 +28,9 @@ namespace SomerenDAL
                 {
                     KamerCode = dr["KamerCode"].ToString(),
                     Gebouw = dr["Gebouw"].ToString(),
-                    Verdieping = Convert.ToInt32(dr["Verdieping"])
+                    Verdieping = Convert.ToInt32(dr["Verdieping"]),
+                    IsEenPersoons = (bool)dr["IsEenPersoons"]
                 };
-
-                if (dr["IsEenPersoons"] != DBNull.Value)
-                {
-                    // Converting the bit value to boolean
-                    kamer.IsEenPersoons = Convert.ToBoolean(dr["IsEenPersoons"]);
-                }
-                else
-                {
-                    // Handling the case when the value is null (assuming a default value)
-                    kamer.IsEenPersoons = false; // Or whatever default value you want
-                }
-
                 kamers.Add(kamer);
             }
             return kamers;
