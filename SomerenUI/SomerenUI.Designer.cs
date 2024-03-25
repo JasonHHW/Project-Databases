@@ -47,7 +47,7 @@
             pictureBox8 = new System.Windows.Forms.PictureBox();
             lblDrankVAT = new System.Windows.Forms.Label();
             pnlDrankOmzet = new System.Windows.Forms.Panel();
-            listView1 = new System.Windows.Forms.ListView();
+            listViewDrankOmzet = new System.Windows.Forms.ListView();
             Sales = new System.Windows.Forms.ColumnHeader();
             Turnover = new System.Windows.Forms.ColumnHeader();
             numberofsales = new System.Windows.Forms.ColumnHeader();
@@ -191,6 +191,7 @@
             omzetToolStripMenuItem.Name = "omzetToolStripMenuItem";
             omzetToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             omzetToolStripMenuItem.Text = "Omzet";
+            omzetToolStripMenuItem.Click += omzetToolStripMenuItem_Click;
             // 
             // vatToolStripMenuItem
             // 
@@ -245,7 +246,7 @@
             // 
             // pnlDrankOmzet
             // 
-            pnlDrankOmzet.Controls.Add(listView1);
+            pnlDrankOmzet.Controls.Add(listViewDrankOmzet);
             pnlDrankOmzet.Controls.Add(lblDrankOmzetEind);
             pnlDrankOmzet.Controls.Add(lblDrankOmzetStart);
             pnlDrankOmzet.Controls.Add(dtpDrankOmzetEind);
@@ -259,14 +260,16 @@
             pnlDrankOmzet.Visible = false;
             pnlDrankOmzet.Paint += pnlDrankOmzet_Paint;
             // 
-            // listView1
+            // listViewDrankOmzet
             // 
-            listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { Sales, Turnover, numberofsales });
-            listView1.Location = new System.Drawing.Point(21, 167);
-            listView1.Name = "listView1";
-            listView1.Size = new System.Drawing.Size(568, 97);
-            listView1.TabIndex = 7;
-            listView1.UseCompatibleStateImageBehavior = false;
+            listViewDrankOmzet.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { Sales, Turnover, numberofsales });
+            listViewDrankOmzet.Location = new System.Drawing.Point(21, 167);
+            listViewDrankOmzet.Name = "listViewDrankOmzet";
+            listViewDrankOmzet.Size = new System.Drawing.Size(568, 97);
+            listViewDrankOmzet.TabIndex = 7;
+            listViewDrankOmzet.UseCompatibleStateImageBehavior = false;
+            listViewDrankOmzet.View = System.Windows.Forms.View.Details;
+            listViewDrankOmzet.SelectedIndexChanged += listViewDrankOmzet_SelectedIndexChanged;
             // 
             // Sales
             // 
@@ -684,7 +687,7 @@
         private System.Windows.Forms.DateTimePicker dtpDrankOmzetStart;
         private System.Windows.Forms.Label lblDrankOmzetEind;
         private System.Windows.Forms.Label lblDrankOmzetStart;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listViewDrankOmzet;
         private System.Windows.Forms.ColumnHeader Turnover;
         public System.Windows.Forms.ColumnHeader Sales;
         private System.Windows.Forms.ColumnHeader numberofsales;

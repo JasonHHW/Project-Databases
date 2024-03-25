@@ -23,7 +23,6 @@ namespace SomerenUI
             pnlDrankOmzet.Hide();
             pnlDrankVAT.Hide();
             pnlDrankVoorrraad.Hide();
-            pnlDashboard.Hide();
         }
         private void ShowDashboardPanel()
         {
@@ -124,6 +123,16 @@ namespace SomerenUI
             }
         }
 
+        public void ShowOmzetPanel()
+        {
+            HideAllPanels();
+            pnlDrankOmzet.BringToFront();
+
+            pnlDrankOmzet.Dock = DockStyle.Fill;
+
+            pnlDrankOmzet.Show();
+        }
+
         private List<Docent> GetDocenten()
         {
             DocentService docentService = new DocentService();
@@ -147,6 +156,20 @@ namespace SomerenUI
             ActiviteitService activiteitService = new ActiviteitService();
             List<Activiteit> activiteiten = activiteitService.GetActiviteiten();
             return activiteiten;
+        }
+
+        private List<OrderItem> GetOmzetItems()
+        {
+            OrderItemService orderItemService = new OrderItemService();
+            List<OrderItem> orderItems = orderItemService.GetOrderItemsByDate(dtpDrankOmzetStart.Value, dtpDrankOmzetEind.Value);
+
+            return orderItems;
+        }
+
+        public int GetAmountOfStudentsWithOrders()
+        {
+            BestellingService bestellingService = new BestellingService();
+            return bestellingService.GetAmountOfStudentsOmzet(dtpDrankOmzetStart.Value, dtpDrankOmzetEind.Value).Count;
         }
 
 
@@ -219,6 +242,26 @@ namespace SomerenUI
             }
         }
 
+        private void DisplayOmzet()
+        {
+            listViewDrankOmzet.Items.Clear();
+
+            List<OrderItem> orderItems = GetOmzetItems();
+            int studentsOrdered = GetAmountOfStudentsWithOrders();
+            double price = 2.00;
+            int totalDrinksSold = 0;
+            double turnover = 0.00;
+            foreach (OrderItem orderItem in orderItems)
+            {
+                totalDrinksSold += orderItem.Aantal;
+                turnover += orderItem.Aantal * price;
+            }
+            ListViewItem li = new ListViewItem(Convert.ToString(totalDrinksSold));
+            li.SubItems.Add("€ " + String.Format("{0,00}", turnover));
+            li.SubItems.Add(Convert.ToString(studentsOrdered));
+            listViewDrankOmzet.Items.Add(li);
+        }
+
         private void dashboardToolStripMenuItem1_Click(object sender, System.EventArgs e)
         {
             ShowDashboardPanel();
@@ -286,15 +329,46 @@ namespace SomerenUI
 
         private void dtpDrankOmzetEind_ValueChanged(object sender, EventArgs e)
         {
-            if (dtpDrankOmzetStart.Value < dtpDrankOmzetEind.Value)
+            if (dtpDrankOmzetStart.Value > dtpDrankOmzetEind.Value)
             {
                 MessageBox.Show("End date can not be set before the start date");
                 dtpDrankOmzetEind.Value = dtpDrankOmzetStart.Value;
             }
+            else if (dtpDrankOmzetEind.Value > DateTime.Now)
+            {
+                MessageBox.Show("End date can not be set after the current date");
+                dtpDrankOmzetEind.Value = DateTime.Now;
+            }
+            else
+            {
+                DisplayOmzet();
+            }
 
         }
 
+        private void omzetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowOmzetPanel();
+        }
+
         private void dtpDrankOmzetStart_ValueChanged(object sender, EventArgs e)
+        {
+            if (dtpDrankOmzetStart.Value > DateTime.Now)
+            {
+                MessageBox.Show("Start date can not be set after the current date");
+                dtpDrankOmzetStart.Value = DateTime.Now;
+            } else if (dtpDrankOmzetStart.Value > dtpDrankOmzetEind.Value)
+            {
+                MessageBox.Show("Start date can not be set after the end date");
+                dtpDrankOmzetStart.Value = dtpDrankOmzetEind.Value;
+            }
+            else
+            {
+                DisplayOmzet();
+            }
+        }
+
+        private void listViewDrankOmzet_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

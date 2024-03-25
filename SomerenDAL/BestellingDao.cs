@@ -27,7 +27,6 @@ namespace SomerenDAL
                 Bestelling bestelling = new Bestelling()
                 {
                     BestellingId = (int)dr["BestellingId"],
-                    OrderItemId = (int)dr["OrderItemId"],
                     StudentId = (int)dr["StudentId"],
                     BestelDatum = (DateTime)dr["BestelDatum"]
                 };
@@ -36,13 +35,30 @@ namespace SomerenDAL
             return bestellingen;
         }
 
-        public List<Bestelling> GetByStartEndDate(DateTime start, DateTime end)
+        public List<Bestelling> ReadStudentId(DataTable dataTable)
         {
-            string query = "SELECT * FROM [Bestelling] WHERE [BestelDatum] >= @start AND [BestelDatum] <= @eind";
-            query.Replace("@start", start.ToString());
-            query.Replace("@end", end.ToString());
-            SqlParameter[] sqlParameters = new SqlParameter[0];
-            return ReadTables(ExecuteSelectQuery(query, sqlParameters));
+            List<Bestelling> bestellingen = new List<Bestelling>();
+
+            foreach (DataRow dr in dataTable.Rows)
+            {
+                Bestelling bestelling = new Bestelling()
+                {
+                    StudentId = (int)dr["StudentId"],
+                };
+                bestellingen.Add(bestelling);
+            }
+            return bestellingen;
+        }
+
+        public List<Bestelling> IndividualStudentsOrdered(DateTime start, DateTime end)
+        {
+            string query = "SELECT DISTINCT[StudentId] FROM [Bestelling] WHERE [BestelDatum] >= @start AND [BestelDatum] <= @eind";
+            SqlParameter[] sqlParameters = new SqlParameter[2];
+            sqlParameters[0] = new SqlParameter("@start", SqlDbType.DateTime);
+            sqlParameters[1] = new SqlParameter("@eind", SqlDbType.DateTime);
+            sqlParameters[0].Value = start;
+            sqlParameters[1].Value = end.AddHours(23).AddMinutes(59).AddSeconds(59);
+            return ReadStudentId(ExecuteSelectQuery(query, sqlParameters));
         }
     }
 }

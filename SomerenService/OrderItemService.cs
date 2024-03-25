@@ -21,5 +21,11 @@ namespace SomerenService
         {
             return orderItemDao.GetAllOrderItems();
         }
+
+        public List<OrderItem> GetOrderItemsByDate(DateTime start, DateTime end)
+        {
+            return orderItemDao.GetOrderItemsByOrderDate(start, end);
+        }
+
     }
 }

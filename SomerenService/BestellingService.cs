@@ -22,9 +22,9 @@ namespace SomerenService
             return bestellingDao.GetAllBestellingen();
         }
 
-        public List<Bestelling> GetBestellingenFromStartEndDate(DateTime start, DateTime end)
+        public List<Bestelling> GetAmountOfStudentsOmzet(DateTime start, DateTime end)
         {
-            return bestellingDao.GetByStartEndDate(start, end);
+            return bestellingDao.IndividualStudentsOrdered(start, end);
         }
     }
 }

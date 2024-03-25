@@ -9,7 +9,6 @@ namespace SomerenModel
     public class Bestelling
     {
         public int BestellingId { get; set; }
-        public int OrderItemId { get; set; }
         public int StudentId { get; set; }
         public DateTime BestelDatum { get; set; }
     }
